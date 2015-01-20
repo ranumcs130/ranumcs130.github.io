@@ -29,7 +29,7 @@
                 background-color: red;
             }
             
-            ul { font-family: fantasy;
+            ul.menu  { font-family: fantasy;
                  font-size: 16px;
                  list-style-type: none;
                  padding:0px;
@@ -37,17 +37,15 @@
                            
             }
             
-            ul li {
+            ul.menu li.menuitem {
                 float: left;
-                //position: relative;
-                //display: block;
             }
             
-            li ul { 
+            li.menuitem ul.submenu { 
                display: none;
             }
            
-            ul li a {
+            ul.menu  li.menuitem a {
                 display: block;
                 text-decoration: none;
                 color: white;
@@ -60,24 +58,21 @@
                
             }
             
-            ul li a:hover {
+            ul.menu li.menuitem a:hover {
                 background-color: red;
             }
             
-            li:hover ul {
+            li.menuitem:hover ul.submenu {
+                list-style-type: none;
                 display: block;
                 position: absolute;
             }
             
-            li:hover li {
-                float: none;
-            }
-            
-            li:hover a {
+            li.menuitem:hover li a {
                 background-color: pink;
             }
             
-            li:hover li a:hover {
+            li.menuitem:hover li a:hover {
                 background: blue;
             }
             
@@ -92,17 +87,17 @@
     </head>
 <body>
     <header>
-    <ul id="menu">
-    <li><a href="">Home</a></li>
-    <li><a href="">About Us</a>
-        <ul>
+    <ul class="menu">
+    <li class="menuitem"><a href="">Home</a></li>
+    <li class="menuitem"><a href="">About Us</a>
+        <ul class="submenu">
             <li><a href="http://www.luther.edu">College History</a></li>
             <li><a href="http://cs.luther.edu">Department History</a></li>
             <li><a href="#">Future Plans</a></li>
         </ul>
     </li>
-    <li><a href="#">Courses</a>
-        <ul>
+    <li class="menuitem"><a href="#">Courses</a>
+        <ul class="submenu">
             <li><a href="#">CS130</a></li>
             <li><a href="#">CS150</a></li>
             <li><a href="#">CS160</a></li>
@@ -110,8 +105,8 @@
             <li><a href="#">CS260</a></li>
         </ul>
     </li>
-    <li><a href="#">Faculty</a>
-        <ul>
+    <li class="menuitem"><a href="#">Faculty</a>
+        <ul class="submenu">
             <li><a href="http://google.com">David Ranum</a></li>
             <li><a href="http://yahoo.com">Kent Lee</a></li>
             <li><a href="http://bing.com">Brad Miller</a></li>
@@ -120,11 +115,11 @@
 </ul>
 </header>
 <aside>
-    <ol>
+    <ul>
         <li>Thing1</li>
         <li>Thing2</li>
         <li>Thing3</li>
-    </ol>
+    </ul>
 </aside>
 <content>
     <h1>HELLO</h1>
