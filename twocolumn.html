@@ -1,8 +1,30 @@
 <html>
     <head>
         <style>
-
+            header {
+                position: fixed;
+                
+            }
             
+            aside {
+                float:left;
+                width: 20%;
+                height: 500px;
+                background-color: gray;
+            }
+            
+            content {
+                float:left;
+                width: 80%;
+                height: 500px;
+                background-color:green;
+                
+            }
+            
+            footer {
+                clear: both;
+                background-color: red;
+            }
             
             ul { font-family: fantasy;
                  font-size: 16px;
@@ -66,7 +88,7 @@
         
     </head>
 <body>
-
+    <header>
     <ul id="menu">
     <li><a href="">Home</a></li>
     <li><a href="">About Us</a>
@@ -93,7 +115,15 @@
         </ul>
     </li>
 </ul>
- 
+</header>
+<aside>
+    <ul>
+        <li>Thing1</li>
+        <li>Thing2</li>
+        <li>Thing3</li>
+    </ul>
+</aside>
+<content>
     <h1>HELLO</h1>
         <p>kldjf ks s
             f sd lkjsd lfkjsd lkfs ldkfjs 
@@ -209,6 +239,7 @@
             sdf lksdfj slkdfjsldfjslkfj sldkfj dslkfj sldkfjsdlfj 
             sf slkdf lskdfj lsdkfjsldkfjsldfkj
         </p>
-    
-    </body>
+</content>
+<footer>Copyright David Ranum</footer>
+</body>
 </html>
