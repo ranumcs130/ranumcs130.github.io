@@ -5,10 +5,18 @@
         border-color: black;
     }
     
-    th,td {
+    th {
         border-style: solid;
         border-width: 3px;
         border-color: black;
+        background-color: gray;
+    }
+    
+    td {
+        border-style: solid;
+        border-width: 3px;
+        border-color: green;
+        background-color: pink;
     }
     
   
